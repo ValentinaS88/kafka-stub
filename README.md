@@ -47,5 +47,24 @@ curl -X POST http://localhost:8080/post-message -H "Content-Type: application/js
 :x:  **Ошибка:**
 Если Kafka недоступна → 500 Internal Server Error 
 
+### 🔍 Actuator
+
+**Мониторинг состояния:**
+
+```bash
+curl http://localhost:8080/actuator/health
+```
+
+**Информация о приложении:**
+
+```bash
+curl http://localhost:8080/actuator/info
+```
+
+**Список всех метрик:**
+
+```bash
+curl http://localhost:8080/actuator/metrics
+```
 
    
