@@ -26,7 +26,7 @@ public class MessageController {
             String uri = httpRequest.getRequestURI();
 
             KafkaMessage kafkaMessage = new KafkaMessage(
-                    request.getMsg_id(),
+                    request.getMsgId(),
                     timestamp,
                     method,
                     uri

@@ -1,26 +1,30 @@
 package org.example.kafkastub.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class KafkaMessage {
-    private String msg_id;
+
+    @JsonProperty("msg_id")
+    private String msgId;
     private String timestamp;
     private String method;
     private String uri;
 
     public KafkaMessage() {}
 
-    public KafkaMessage(String msg_id, String timestamp, String method, String uri) {
-        this.msg_id = msg_id;
+    public KafkaMessage(String msgId, String timestamp, String method, String uri) {
+        this.msgId = msgId;
         this.timestamp = timestamp;
         this.method = method;
         this.uri = uri;
     }
 
-    public String getMsg_id() {
-        return msg_id;
+    public String getMsgId() {
+        return msgId;
     }
 
-    public void setMsg_id(String msg_id) {
-        this.msg_id = msg_id;
+    public void setMsg_id(String msgId) {
+        this.msgId = msgId;
     }
 
     public String getTimestamp() {

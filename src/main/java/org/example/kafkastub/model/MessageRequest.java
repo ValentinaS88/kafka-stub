@@ -1,15 +1,19 @@
 package org.example.kafkastub.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class MessageRequest {
-    private String msg_id;
+
+    @JsonProperty("msg_id")
+    private String msgId;
 
     public MessageRequest() {}
 
-    public String getMsg_id() {
-        return msg_id;
+    public String getMsgId() {
+        return msgId;
     }
 
-    public void setMsg_id(String msg_id) {
-        this.msg_id = msg_id;
+    public void setMsgId(String msgId) {
+        this.msgId = msgId;
     }
 }
